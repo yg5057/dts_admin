@@ -1,0 +1,30 @@
+/* Main section*/ 
+/* main__top */
+.main__top{display: flex; flex-direction: row; align-items: center; padding: 20px 20px 0 20px;}
+.top-box{display: flex; flex-direction: row;}
+.top__rectangle{width: 12.729px; height: 57.654px; background: #D9CFC6; margin-right: 10px;}
+.top-text{color: #D1372A; font-family: Pretendard; font-size: 64px; font-style: normal; font-weight: 700; line-height: normal; letter-spacing: -0.64px;}
+/* main__bottom */
+.main__bottom{ display: flex; flex-direction: row;}
+.bottom__left, .bottom__right{width: 50%; padding: 20px;}
+/* left__top */
+.left__top{width: 100%; height: 265px; padding: 40px 20px 20px 20px;} 
+.top__grid_container{display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; place-items: center;}
+.grid_container__circle{width: 195px; height: 195px; border-radius: 50%;}
+/* circle-style */
+.circle-text00{text-align: center; font-family: Pretendard; font-size: 32px; font-style: normal; font-weight: 700; line-height: normal;}
+.circle-text01{color: #FFF; text-align: center; font-family: Pretendard; font-size: 64px; font-style: normal; font-weight: 500; line-height: normal; padding-top: 10px;}
+.circle-style00 {padding: 35px 0 35px 0; background-color: #F2D1D1; color: #C84A4A; vertical-align: center;}
+.circle-style01 {padding: 35px 0 35px 0; background-color: #C4DDEF; color: #406B8A; vertical-align: center;}
+.circle-style02{padding: 35px 0 35px 0; background-color: #DFD0F2; color: #775A9C; vertical-align: center;}
+/* left__bottom */
+.left__bottom{width: 100%; padding: 20px;}
+.bottom__couns-th { display:flex; flex-direction: row; justify-content: space-between; height: 70px; padding: 20px; border-radius: 10px; background-color: var(--main-tablehd);}
+.couns-th-text00 { color: var(--font-bk); font-family: Pretendard; font-size: 24px; font-style: normal; font-weight: 700; line-height: normal;}
+.couns-th-text01 {color: #969696; font-family: Pretendard; font-size: 24px; font-style: normal; font-weight: 700; line-height: normal;}
+.bottom__couns-tb {width: 100%;  color: #6D7683; font-size: 20px;}
+.bottom__couns-tb td{padding: 8px;}
+.couns-tb__title-text{color: #000;}
+
+/* table-text-style */
+.table-text-style{font-family: Inter; font-style: normal; font-weight: 400; line-height: normal;}

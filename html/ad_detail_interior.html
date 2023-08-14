@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Font Awesome Cdn Link -->
+    <script src="https://kit.fontawesome.com/c32876bdec.js" crossorigin="anonymous"></script>
+    <script defer src="../JS/checkbox.js"></script>
+</head>
+
+
+<body>
+    <div class="wrap">
+        <section class="header">
+            <img src="../image/Rectangle 2954.png" alt="" class="header__img">
+            <div class="header__inner">
+                <img src="../image/logo_black.png" alt="" class="inner__logo">
+            </div>
+            <div class="header__line"></div>
+        </section><!--Header Section-->
+        <div class="container">
+            <section class="nav">
+                <ul>
+                    <li class="menu__dropdown">
+                        <a href="../index.html" class="nav__menu">
+                            <span class="menu-text">상담 요청 관리</span>
+                        </a>
+                        <ul class="menu__hide">
+                            <li><a href="../index.html" class="hide-text">상담 요청 관리</a></li>
+                            <li><a href="./html/ad_reqMan_detail.html" class="hide-text">상세 상담 일정</a></li>
+                            <li><a href="./html/ad_detail_reqConts.html" class="hide-text">상세 상담 진행</a></li>
+                            <li><a href="./html/ad_company.html" class="hide-text">업체 배정</a></li>
+                            <li><a href="./html/ad_reqMan_check.html" class="hide-text">상담 요청 조회</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__dropdown">
+                        <a href="./html/ad_construction_list.html" class="nav__menu">
+                            <span class="menu-text">공사 문서 관리</span>
+                        </a>
+                        <ul class="menu__hide">
+                            <li><a href="./html/ad_construction_list.html" class="hide-text">공사 문서 목록</a></li>
+                            <li><a href="./html/ad_construction_check.html" class="hide-text">공사 문서 조회</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__dropdown">
+                        <a href="#" class="nav__menu">
+                            <span class="menu-text">파트너 관리</span>
+                        </a>
+                        <ul class="menu__hide">
+                        </ul>
+                    </li>
+                </ul>
+            </section><!--nav Section-->
+            <section class="main">
+                <div class="main__top">
+                    <div class="top__rectangle"></div>
+                    <p class="top-text">상세 상담 진행</p>
+                </div><!--main__top-->
+                <div class="main__wrap">
+                    <div class="main-reqMan">
+                        <div class="main__icon-wrap">
+                            <i class="main__icon fa-solid fa-pen-to-square"></i>
+                            <span class="main__icon-text-gray">요청내용</span>
+                        </div>
+                        <i class="main__icon-wh fa-solid fa-play"></i>
+                        <div class="main__icon-wrap">
+                            <i class="main__icon-rd fa-solid fa-brush"></i>
+                            <span class="main__icon-text-rd">인테리어</span>
+                        </div>
+                        <i class="main__icon-wh fa-solid fa-play"></i>
+                        <div class="main__icon-wrap">
+                            <i class="main__icon fa-solid fa-cube"></i>
+                            <span class="main__icon-text-gray">공간목표</span>
+                        </div>
+                        <i class="main__icon-wh fa-solid fa-play"></i>
+                        <div class="main__icon-wrap">
+                            <i class="main__icon fa-solid fa-piggy-bank"></i>
+                            <span class="main__icon-text-gray">예산</span>
+                        </div>
+                        <i class="main__icon-wh fa-solid fa-play"></i>
+                        <div class="main__icon-wrap">
+                            <i class="main__icon fa-solid fa-circle-check"></i>
+                            <span class="main__icon-text-gray">기타</span>
+                        </div>
+                    </div>
+                    <form class="main__reqDetail-form" action="" mathod="">
+                        <div class="main__inputWrap">
+                            <label for="interior-style" class="label-adReqManDetail">스타일</label>
+                                <input type="text" name="interior-style" id="interior-style" class="input-adReqManCheck" placeholder="스타일 입력란">
+                            <label for="interior-area" class="label-adReqManDetail">인테리어 범위</label>
+                                <input type="text" name="interior-area" id="interior-area" class="input-adReqManCheck" placeholder="인테리어 범위 입력란">
+                            <label for="" class="label-adReqManDetail">공정</label>
+                                <div class="input-adReqManCheck">
+                                    <div class="input__chip-group">
+                                        <div class="chip-element padding-all">
+                                            <input type="checkbox" class="keyword" value="전기" id="keyword1">
+                                            <label for="keyword1" class="input__chip chip-style-gray">전기</label>
+                                        </div>
+                                        <div class="chip-element padding-all">
+                                            <input type="checkbox" class="keyword" value="철거" id="keyword2">
+                                            <label for="keyword2" class="input__chip chip-style-gray">철거</label>
+                                        </div>
+                                        <div class="chip-element padding-all">
+                                            <input type="checkbox" class="keyword" value="난방" id="keyword3">
+                                            <label for="keyword3" class="input__chip chip-style-gray">난방</label>
+                                        </div>
+                                        <div class="chip-element padding-all">
+                                            <input type="checkbox" class="keyword" value="단열" id="keyword4">
+                                            <label for="keyword4" class="input__chip chip-style-gray">단열</label>
+                                        </div>
+                                        <div class="chip-element padding-all">
+                                            <input type="checkbox" class="keyword" value="방수" id="keyword5">
+                                            <label for="keyword5" class="input__chip chip-style-gray">방수</label>
+                                        </div>
+                                    </div><!--input__chip-group-->
+                                    <div class="input__chip-group">
+                                        <div class="chip-element padding-all">
+                                            <input type="checkbox" class="keyword" value="통신" id="keyword6">
+                                            <label for="keyword6" class="input__chip chip-style-gray">통신</label>
+                                        </div>
+                                        <div class="chip-element padding-all">
+                                            <input type="checkbox" class="keyword" value="기타" id="keyword7" onclick="toggleTextbox(this, 'keyword-etc')">
+                                            <label for="keyword7" class="input__chip chip-style-gray">기타</label>
+                                                <input class="keyword-etc" type="text" id="keyword-etc" placeholder="기타 입력란" disabled/>
+                                        </div>
+                                    </div><!--input__chip-group-->
+                                </div><!--input-adReqManCheck-->
+                            <label for="interior-goal" class="label-adReqManDetail">인테리어 목적</label>
+                            <textarea name="interior-goal" form="main__reqDetail-form" id="interior-goal" class="input-adReqManCheck-00" placeholder="인테리어 목적 입력란"></textarea>
+                        </div><!--main__inputWrap-->
+                        <div class="main__submit">
+                            <button class="btn-save btn-style-rd" type="button"> <a href="./ad_detail_space.html">상담 내용 저장</a></button>
+                        </div><!--main__submit-->
+                    </form><!--main__reqDetail-form-->
+                </div><!--main__wrap-->
+            </section><!--main-->
+        </div><!--container-->
+    </div><!--wrap-->
+
+</body>
+
+</html>

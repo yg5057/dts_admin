@@ -1,0 +1,30 @@
+/* Main Section */
+.main__bottom-Item{width: 100%; padding: 2em; vertical-align: middle;}
+.form__gridCon-addTb{place-items: center; display: grid; grid-template-columns: 1fr 1fr; gap:2em;}
+.gridCon__right-addTb{display:grid; grid-template-rows: 1fr 2fr 1fr; gap:1.5em; padding: 2em 1em 1em 2em;}
+.right__grid1-addTb, .right__grid2-addTb{display: flex; flex-direction: column; gap: 1.2em;}
+.right__grid3-addTb{display: flex; justify-content: end; align-items: end; gap: 1em;}
+.grid2__btn-addItem{padding-left: 10em;}
+
+/* style */
+.right__title-addTb{width: fit-content; border-bottom: 2px solid #585858; font-size: 24px; color: #333; font-family: Pretendard; font-style: normal; font-weight: 700; line-height: normal; letter-spacing: -0.24px;}
+.item-delete{color: #797979; text-align: center; font-family: Pretendard; font-size: 24px; font-style: normal; font-weight: 500; line-height: normal; letter-spacing: -0.24px;}
+.item-delete:hover{cursor: pointer;}
+.right__btn-addItem{width: 108px; height: 47px;
+    color: #D1372A;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.2px;}
+.right__btn-cancel{width: 92px; height: 77px; 
+    color: #6D7683;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.24px;}

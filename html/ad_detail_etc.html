@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Font Awesome Cdn Link -->
+    <script src="https://kit.fontawesome.com/c32876bdec.js" crossorigin="anonymous"></script>
+    <script defer src="../JS/checkbox.js"></script>
+</head>
+
+
+<body>
+    <div class="wrap">
+        <section class="header">
+            <img src="../image/Rectangle 2954.png" alt="" class="header__img">
+            <div class="header__inner">
+                <img src="../image/logo_black.png" alt="" class="inner__logo">
+            </div>
+            <div class="header__line"></div>
+        </section><!--Header Section-->
+        <div class="container">
+            <section class="nav">
+                <ul>
+                    <li class="menu__dropdown">
+                        <a href="../index.html" class="nav__menu">
+                            <span class="menu-text">상담 요청 관리</span>
+                        </a>
+                        <ul class="menu__hide">
+                            <li><a href="../index.html" class="hide-text">상담 요청 관리</a></li>
+                            <li><a href="./html/ad_reqMan_detail.html" class="hide-text">상세 상담 일정</a></li>
+                            <li><a href="./html/ad_detail_reqConts.html" class="hide-text">상세 상담 진행</a></li>
+                            <li><a href="./html/ad_company.html" class="hide-text">업체 배정</a></li>
+                            <li><a href="./html/ad_reqMan_check.html" class="hide-text">상담 요청 조회</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__dropdown">
+                        <a href="./html/ad_construction_list.html" class="nav__menu">
+                            <span class="menu-text">공사 문서 관리</span>
+                        </a>
+                        <ul class="menu__hide">
+                            <li><a href="./html/ad_construction_list.html" class="hide-text">공사 문서 목록</a></li>
+                            <li><a href="./html/ad_construction_check.html" class="hide-text">공사 문서 조회</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__dropdown">
+                        <a href="#" class="nav__menu">
+                            <span class="menu-text">파트너 관리</span>
+                        </a>
+                        <ul class="menu__hide">
+                        </ul>
+                    </li>
+                </ul>
+            </section><!--nav Section-->
+            <section class="main">
+                <div class="main__top">
+                    <div class="top__rectangle"></div>
+                    <p class="top-text">상세 상담 진행</p>
+                </div><!--main__top-->
+                <div class="main__wrap">
+                    <div class="main-reqMan">
+                        <div class="main__icon-wrap">
+                            <i class="main__icon fa-solid fa-pen-to-square"></i>
+                            <span class="main__icon-text-gray">요청내용</span>
+                        </div>
+                        <i class="main__icon-wh fa-solid fa-play"></i>
+                        <div class="main__icon-wrap">
+                            <i class="main__icon fa-solid fa-brush"></i>
+                            <span class="main__icon-text-gray">인테리어</span>
+                        </div>
+                        <i class="main__icon-wh fa-solid fa-play"></i>
+                        <div class="main__icon-wrap">
+                            <i class="main__icon fa-solid fa-cube"></i>
+                            <span class="main__icon-text-gray">공간목표</span>
+                        </div>
+                        <i class="main__icon-wh fa-solid fa-play"></i>
+                        <div class="main__icon-wrap">
+                            <i class="main__icon fa-solid fa-piggy-bank"></i>
+                            <span class="main__icon-text-gray">예산</span>
+                        </div>
+                        <i class="main__icon-wh fa-solid fa-play"></i>
+                        <div class="main__icon-wrap">
+                            <i class="main__icon-rd fa-solid fa-circle-check"></i>
+                            <span class="main__icon-text-rd">기타</span>
+                        </div>
+                    </div>
+                    <form class="main__reqDetail-form" action="" mathod="">
+                        <div class="main__inputWrap">
+                            <label for="business-conts" class="label-adReqManDetail">업체 희망 사항</label>
+                                <textarea form="main__reqDetail-form"  id="business-conts" class="input-adReqManCheck-00" placeholder="업체 희망 사항 입력란"></textarea>
+                            <label for="consumer-addConts" class="label-adReqManDetail">소비자 관련 추가 내용</label>
+                                <textarea form="main__reqDetail-form"  id="consumer-addConts" class="input-adReqManCheck-00" placeholder="소비자 관련 추가 내용 입력란"></textarea>
+                            <label for="cons-addConts" class="label-adReqManDetail">공사 관련 추가 내용</label>
+                                <textarea form="main__reqDetail-form"  id="cons-addConts" class="input-adReqManCheck-00" placeholder="공사 관련 추가 내용 입력란"></textarea>
+                        </div><!--main__inputWrap-->
+                        <div class="main__submit">
+                            <button class="btn-save btn-style-rd" type="submit">상담 내용 저장</button>
+                        </div><!--main__submit-->
+                    </form><!--main__reqDetail-form-->
+                </div><!--main__wrap-->
+            </section><!--main-->
+        </div><!--container-->
+    </div><!--wrap-->
+
+</body>
+
+</html>

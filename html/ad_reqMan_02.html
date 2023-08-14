@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Font Awesome Cdn Link -->
+    <script src="https://kit.fontawesome.com/c32876bdec.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <div class="wrap">
+        <section class="header">
+            <img src="../image/Rectangle 2954.png" alt="" class="header__img">
+            <div class="header__inner">
+                <img src="../image/logo_black.png" alt="" class="inner__logo">
+            </div>
+            <div class="header__line"></div>
+        </section><!--Header Section-->
+        <div class="container">
+            <section class="nav">
+                <ul>
+                    <li class="menu__dropdown">
+                        <a href="../index.html" class="nav__menu">
+                            <span class="menu-text">상담 요청 관리</span>
+                        </a>
+                        <ul class="menu__hide">
+                            <li><a href="../index.html" class="hide-text">상담 요청 관리</a></li>
+                            <li><a href="./html/ad_reqMan_detail.html" class="hide-text">상세 상담 일정</a></li>
+                            <li><a href="./html/ad_detail_reqConts.html" class="hide-text">상세 상담 진행</a></li>
+                            <li><a href="./html/ad_company.html" class="hide-text">업체 배정</a></li>
+                            <li><a href="./html/ad_reqMan_check.html" class="hide-text">상담 요청 조회</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__dropdown">
+                        <a href="./html/ad_construction_list.html" class="nav__menu">
+                            <span class="menu-text">공사 문서 관리</span>
+                        </a>
+                        <ul class="menu__hide">
+                            <li><a href="./html/ad_construction_list.html" class="hide-text">공사 문서 목록</a></li>
+                            <li><a href="./html/ad_construction_check.html" class="hide-text">공사 문서 조회</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__dropdown">
+                        <a href="#" class="nav__menu">
+                            <span class="menu-text">파트너 관리</span>
+                        </a>
+                        <ul class="menu__hide">
+                        </ul>
+                    </li>
+                </ul>
+            </section><!--nav Section-->
+            <section class="main">
+                <div class="main__top">
+                    <div class="top__rectangle"></div>
+                    <p class="top-text">상담 요청 관리</p>
+                </div><!--main__top-->
+                <div class="main__wrap">
+                    <div class="main__tab">
+                        <a href="./ad_reqMan_00.html"><button type="button" class="tab-reqMan btn-tab-inactive">신규 요청 <div class="ellipse-style-rd">2</div>
+                        </button></a>
+                        <a href="./ad_reqMan_01.html"><button type="button" class="tab-reqMan btn-tab-inactive">상담 대기 <div class="ellipse-style-rd">2</div>
+                        </button></a>
+                        <a href="./ad_reqMan_02.html"><button type="button" class="tab-reqMan btn-tab-active">배정 대기 <div class="ellipse-style-rd">2</div>
+                        </button></a>
+                        <a href="./ad_reqMan_03.html"><button type="button" class="tab-reqMan btn-tab-inactive">전체 요청 <div class="ellipse-style-rd">2</div>
+                        </button></a>
+                    </div><!--main__tab-->
+                    <div class="main__conts">
+                        <form class="conts__search-form" action="" method="">
+                            <label class="label-adReqMan" for="name">이름
+                                <input class="input-adReqMan" type="text" name="user-name" id="user-name"
+                                    placeholder="신청자 이름 입력" required>
+                            </label>
+                            <label class="label-adReqMan" for="user-phonNumber">연락처
+                                <input class="input-adReqMan" type="tel" name="user-phonNumber" id="user-phonNumber"
+                                    placeholder="연락처 입력" required>
+                            </label>
+                            <label class="label-adReqMan" for="user-email">이메일
+                                <input class="input-adReqMan" type="email" name="user-email" id="user-email"
+                                    placeholder="이메일 입력" required>
+                            </label>
+                            <label class="label-adReqMan" for="start-date">시작일
+                                <input class="input-adReqMan" type="date" name="start-date" id="start-date" required>
+                            </label>
+                            <label class="label-adReqMan" for="end-date">종료일
+                                <input class="input-adReqMan" type="date" name="end-date" id="end-date" required>
+                            </label>
+                            <div class="search-form__btn">
+                                <button type="submit" class="btn00 btn-style-rd">검색하기</button>
+                            </div>
+                        </form><!--conts__search-form-->
+                        <table class="conts__table-group">
+                            <thead>
+                                <th class="table-group__reqMan-th">번호</th>
+                                <th class="table-group__reqMan-th">신청자</th>
+                                <th class="table-group__reqMan-th">연락처</th>
+                                <th class="table-group__reqMan-th">이메일</th>
+                                <th class="table-group__reqMan-th">상담 신청일</th>
+                                <th class="table-group__reqMan-th"></th>
+                            </thead>
+                            <tbody>
+                                <tr class="table-group__reqMan-tr">
+                                    <td>5</td>
+                                    <td>김철수한무</td>
+                                    <td>010-1234-5678</td>
+                                    <td>email@email.com</td>
+                                    <td>2023.06.01</td>
+                                    <td>
+                                        <div class="table-group__chip chip-style-or">배정</div>
+                                    </td>
+                                </tr>
+                                <tr class="table-group__reqMan-tr">
+                                    <td>5</td>
+                                    <td>김철수한무</td>
+                                    <td>010-1234-5678</td>
+                                    <td>email@email.com</td>
+                                    <td>2023.06.01</td>
+                                    <td>
+                                        <div class="table-group__chip chip-style-or">배정</div>
+                                    </td>
+                                </tr>
+                                <tr class="table-group__reqMan-tr">
+                                    <td>5</td>
+                                    <td>김철수한무</td>
+                                    <td>010-1234-5678</td>
+                                    <td>email@email.com</td>
+                                    <td>2023.06.01</td>
+                                    <td>
+                                        <div class="table-group__chip chip-style-or">배정</div>
+                                    </td>
+                                </tr>
+                                <tr class="table-group__reqMan-tr">
+                                    <td>5</td>
+                                    <td>김철수한무</td>
+                                    <td>010-1234-5678</td>
+                                    <td>email@email.com</td>
+                                    <td>2023.06.01</td>
+                                    <td>
+                                        <div class="table-group__chip chip-style-or">배정</div>
+                                    </td>
+                                </tr>
+                                <tr class="table-group__reqMan-tr">
+                                    <td>5</td>
+                                    <td>김철수한무</td>
+                                    <td>010-1234-5678</td>
+                                    <td>email@email.com</td>
+                                    <td>2023.06.01</td>
+                                    <td>
+                                        <div class="table-group__chip chip-style-or">배정</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table><!--conts__table-group-->
+                        <div class="conts__pagination">
+                            <div class="pagination">
+                                <a href="#">&laquo;</a>
+                                <a href="#">&lt;</a>
+                                <a href="#" class="active">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                                <a href="#">6</a>
+                                <a href="#">&gt;</a></li>
+                                <a href="#">&raquo;</a>
+                            </div>
+                        </div><!--conts__pagination-->
+                    </div><!--main__conts-->
+                </div><!--main__wrap-->
+            </section><!--main-->
+        </div><!--container-->
+    </div><!--wrap-->
+
+</body>
+
+</html>

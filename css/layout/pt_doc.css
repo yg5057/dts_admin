@@ -1,0 +1,7 @@
+/* Main Section */
+.main__bottom-consDoc{width: 100%; padding: 6em 4em; vertical-align: middle;}
+.consDoc__gridCon{place-items: center; display: grid; grid-template-columns: repeat(2, 1fr); gap:2em;}
+.item1__title{ width: fit-content; border-bottom: 3px solid #585858; font-size: 36px; color: #333; font-family: Pretendard; font-style: normal; font-weight: 700; line-height: normal; letter-spacing: -0.36px; }
+.gridCon__item1, .gridCon__item2{padding: 2em;}
+.gridCon__item3, .gridCon__item4{padding: 0 2em;}
+.gridCon-box{width: 38em; height: 28em; flex-shrink: 0; border-radius: 60px; background:var(--header-gr);}

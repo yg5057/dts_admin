@@ -1,0 +1,52 @@
+/* ad_reqMan_00~02.css */
+/* Main Section */
+/* main__top */
+.main__top{display: flex; flex-direction: row; align-items: center; padding: 20px 20px 0 20px;}
+.top-box{display: flex; flex-direction: row;}
+.top__rectangle{width: 12.729px; height: 57.654px; background: #D9CFC6; margin-right: 10px;}
+.top-text{color: #D1372A; font-family: Pretendard; font-size: 64px; font-style: normal; font-weight: 700; line-height: normal; letter-spacing: -0.64px;}
+/* main__wrap*/
+.main__wrap{padding:  3em 1em 1em 1em;}
+/* main__tab */
+.main__tab{display: flex; flex-direction: row; justify-content: space-between;}
+.tab-reqMan{width: 364px; height: 84px;}
+/* main__conts */
+.main__conts{ padding: 1.5em; background: var(--default-white);}
+.conts__search-form{display: grid; grid:"a a a" "b b b";  gap: 2.5em; padding: 3em 8em;}
+.search-form__btn{display: flex; justify-content: end;}
+.btn00{width: 273px; height: 60px; color: #FCF2F1; text-align: center; font-family: Pretendard; font-size: 24px; font-style: normal; font-weight: 700; line-height: normal; letter-spacing: -0.24px;}
+/* conts__table */
+.conts__table-group{width: 100%;}
+.table-group__reqMan-tr td{padding: .5em; }
+.table-group__chip{width: 102px; height: 46px; display: inline-block;}
+.reqMan-tr__text-bl{color: #1F47D8;}
+/* conts__pagination*/
+.conts__pagination {margin-top: 3em; text-align: center;}
+
+
+
+/* ad_reqMan_03.css */
+/* Main Section */
+/* main__wrap */
+.main__wrap{padding:  1em 1em 1em 1em;}
+.main-reqManWrap{ display: flex; flex-direction: column; justify-content: center; align-items: center; margin-bottom: 3em;}
+.main-reqNum{width: 168px; height: 56px; padding: .4em;}  
+.reqDetail-form__gridWrap{display: grid; grid-template-columns: 1fr 1fr; margin-bottom: 5em;}
+.reqDetail-form__gridLeft{display: grid; grid-template-rows: 1fr; gap: 10px;  padding: 0 3em; border-right: 2px solid #CBCBCB;}
+.reqDetail-form__gridRight{display: grid; grid-template-rows: 1fr; gap: 10px;  padding: 0 3em;}
+.reqDetail-form__submit{width: 238px; height: 253px; position: absolute; right: 6em; display: flex; flex-direction: column; justify-content: space-around; align-items: center; padding: 1em;}
+.btn-banner{width: 150px; height: 45px; color: var(--default-white); font-family: Pretendard; font-size: 16px; font-style: normal; font-weight: 700; line-height: normal; letter-spacing: -0.16px;}
+
+
+
+/* ad_reqMan_check.css */
+/* Main Section */
+/* .reqMan-check__gridWrap */
+.reqMan-check__gridWrap{display: grid; grid-template-columns: 1fr 1fr; margin-bottom: 3em;}
+.reqMan-check__gridLeft{border-right: 2px solid #CBCBCB;}
+.reqMan-check__gridLeft, .reqMan-check__gridRight{display: flex; flex-direction: column;  gap: 1em; margin-top: 3em; padding: 3em; }
+.input__chip-group{display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;}
+.input__chip{width: 70px; height: 33px; margin: .5em; cursor:pointer;}
+.input-etc{ width: 320px; height: 33px; margin-left: 4em; padding: .3em 1em; text-align: left; border-radius: 5px; border: 0.5px solid var(--subtext); background: var(--default-white); color: #000; font-family: Pretendard; font-size: 16px; font-style: normal; font-weight: 500; line-height: 140%; letter-spacing: -0.16px;}
+
+

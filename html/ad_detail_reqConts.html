@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Font Awesome Cdn Link -->
+    <script src="https://kit.fontawesome.com/c32876bdec.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <div class="wrap">
+        <section class="header">
+            <img src="../image/Rectangle 2954.png" alt="" class="header__img">
+            <div class="header__inner">
+                <img src="../image/logo_black.png" alt="" class="inner__logo">
+            </div>
+            <div class="header__line"></div>
+        </section><!--Header Section-->
+        <div class="container">
+            <section class="nav">
+                <ul>
+                    <li class="menu__dropdown">
+                        <a href="../index.html" class="nav__menu">
+                            <span class="menu-text">상담 요청 관리</span>
+                        </a>
+                        <ul class="menu__hide">
+                            <li><a href="../index.html" class="hide-text">상담 요청 관리</a></li>
+                            <li><a href="./html/ad_reqMan_detail.html" class="hide-text">상세 상담 일정</a></li>
+                            <li><a href="./html/ad_detail_reqConts.html" class="hide-text">상세 상담 진행</a></li>
+                            <li><a href="./html/ad_company.html" class="hide-text">업체 배정</a></li>
+                            <li><a href="./html/ad_reqMan_check.html" class="hide-text">상담 요청 조회</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__dropdown">
+                        <a href="./html/ad_construction_list.html" class="nav__menu">
+                            <span class="menu-text">공사 문서 관리</span>
+                        </a>
+                        <ul class="menu__hide">
+                            <li><a href="./html/ad_construction_list.html" class="hide-text">공사 문서 목록</a></li>
+                            <li><a href="./html/ad_construction_check.html" class="hide-text">공사 문서 조회</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__dropdown">
+                        <a href="#" class="nav__menu">
+                            <span class="menu-text">파트너 관리</span>
+                        </a>
+                        <ul class="menu__hide">
+                        </ul>
+                    </li>
+                </ul>
+            </section><!--nav Section-->
+            <section class="main">
+                <div class="main__top">
+                    <div class="top__rectangle"></div>
+                    <p class="top-text">상세 상담 진행</p>
+                </div><!--main__top-->
+                <div class="main__wrap">
+                    <div class="main-reqManWrap">
+                        <div class="main-reqMan">
+                            <div class="main__icon-wrap">
+                                <i class="main__icon-rd fa-solid fa-pen-to-square"></i>
+                                <span class="main__icon-text-rd">요청내용</span>
+                            </div>
+                            <i class="main__icon-wh fa-solid fa-play"></i>
+                            <div class="main__icon-wrap">
+                                <i class="main__icon fa-solid fa-brush"></i>
+                                <span class="main__icon-text-gray">인테리어</span>
+                            </div>
+                            <i class="main__icon-wh fa-solid fa-play"></i>
+                            <div class="main__icon-wrap">
+                                <i class="main__icon fa-solid fa-cube"></i>
+                                <span class="main__icon-text-gray">공간목표</span>
+                            </div>
+                            <i class="main__icon-wh fa-solid fa-play"></i>
+                            <div class="main__icon-wrap">
+                                <i class="main__icon fa-solid fa-piggy-bank"></i>
+                                <span class="main__icon-text-gray">예산</span>
+                            </div>
+                            <i class="main__icon-wh fa-solid fa-play"></i>
+                            <div class="main__icon-wrap">
+                                <i class="main__icon fa-solid fa-circle-check"></i>
+                                <span class="main__icon-text-gray">기타</span>
+                            </div>
+                        </div>
+                        <rectangle class="main-reqNum rec-style-bl">요청번호 1</rectangle>
+                    </div>
+                    <form class="main__reqDetail-form" action="" mathod="">
+                        <div class="reqDetail-form__gridWrap">
+                            <div class="reqDetail-form__gridLeft">
+                                <label class="label-adReqManDetail" for="user-name"> 신청자
+                                    <input class="input-adReqManDetail" type="text" name="user-name" id="user-name">
+                                </label>
+                                <label class="label-adReqManDetail" for="app-date"> 신청 날짜
+                                    <input class="input-adReqManDetail" type="date" name="app-date" id="app-date">
+                                </label>
+                                <label class="label-adReqManDetail" for="user-tel"> 연락처
+                                    <input class="input-adReqManDetail" type="tel" name="user-tel" id="user-tel">
+                                </label>
+                                <label class="label-adReqManDetail" for="user-email"> 이메일
+                                    <input class="input-adReqManDetail" type="email" name="user-email" id="user-email">
+                                </label>
+                                <label class="label-adReqManDetail"> 공사 기간
+                                    <div class="input-dateWrap">
+                                        <input class="input-adReqManDetail-date margin-R" type="date" name="start-date"
+                                            id="start-date" data-placeholder="시작일">
+                                        <input class="input-adReqManDetail-date" type="date" name="end-date"
+                                            id="end-date" data-placeholder="종료일">
+                                    </div>
+                                </label>
+                                <label class="label-adReqManDetail" for="consConts"> 공사 내용
+                                    <input class="input-adReqManDetail" type="text" name="consConts" id="consConts">
+                                </label>
+                            </div><!--reqDetail-form__gridLeft-->
+                            <div Class="reqDetail-form__gridRight">
+                                <label class="label-adReqManDetail" for="user-address"> 주소
+                                    <input class="input-adReqManDetail" type="address" name="user-address" id="user-address">
+                                </label>
+                                <label class="label-adReqManDetail" for="cons-type"> 공사 종류
+                                    <input class="input-adReqManDetail" type="text" name="cons-type" id="cons-type">
+                                </label>
+                                <label class="label-adReqManDetail" for="cons-area"> 공사 면적
+                                    <input class="input-adReqManDetail" type="number" name="cons-area" id="cons-area" placeholder="m^2">
+                                </label>
+                                <label class="label-adReqManDetail" for="user-budget"> 소비자 예산
+                                    <input class="input-adReqManDetail" type="number" name="user-budget" id="user-budget">
+                                </label>
+                                <label class="label-adReqManDetail" for="contact-date"> 연락 희망 날짜
+                                    <input class="input-adReqManDetail" type="date" name="contact-date" id="contact-date">
+                                </label>
+                                <label class="label-adReqManDetail" for="visit-date"> 방문 희망 날짜
+                                    <input class="input-adReqManDetail" type="date" name="visit-date" id="visit-date">
+                                </label>
+                            </div><!--reqDetail-form__gridRight-->
+                        </div><!--reqDetail-form__gridWrap-->
+                        <div class="main__submit">
+                            <button class="btn-save btn-style-rd" type="button"> <a href="./ad_detail_interior.html">상담 내용 저장</a></button>
+                        </div><!--main__submit-->
+                    </form><!--main__reqDetail-form-->
+                </div><!--main__wrap-->
+            </section><!--main-->
+        </div><!--container-->
+    </div><!--wrap-->
+
+</body>
+
+</html>

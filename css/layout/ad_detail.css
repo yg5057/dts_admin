@@ -1,0 +1,33 @@
+/* ad_detail_reqConts.css */
+/* Main Section */
+.main-reqMan{ display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 6em; margin: 2em 2em 4em 2em; border-bottom: 2px solid #C0C0C0;}
+.main__icon-wrap{display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 1.5em; padding: 1em 1em 1.5em 1em;}
+.main__icon-rd{font-size: 4em;  text-align: center; color: var(--accent);}
+.main__icon{font-size: 4em;  text-align: center; color: var(--admin-i-gray);}
+.main__icon-wh{display: flex; justify-content: center; align-items: center; font-size: 2em;  text-align: center; color: var(--default-white);}
+.main__icon-text-rd{color: var(--accent); text-align: center; font-family: Pretendard; font-size: 24px; font-style: normal; font-weight: 700; line-height: normal; letter-spacing: -0.24px;}
+.main__icon-text-gray{color: var(--admin-i-gray); text-align: center; font-family: Pretendard; font-size: 24px; font-style: normal; font-weight: 700; line-height: normal; letter-spacing: -0.24px;}
+.main__submit{display: flex; justify-content: end;}
+.btn-save{width: 216px; height: 77px; color: var(--default-white); font-family: Pretendard; font-size: 24px; font-style: normal; font-weight: 700; line-height: normal; letter-spacing: -0.16px;}
+
+
+/* ad_detail_inteior.css */
+/* Main Section */
+.main__inputWrap{display: flex; flex-direction: column; justify-content: center;  gap: 1em; padding: 1em 30em; }
+/* checkbox-style */
+.chip-element .keyword{ display:none;} 
+.chip-element input:checked + .input__chip{background: #8E7660; color: var(--default-white);}
+.keyword-etc {width: 290px; margin-left: 3.5em; padding: .3em 1em; text-align: left; border-radius: 5px; border: 0.5px solid var(--subtext); background: var(--default-white); color: #000; font-family: Pretendard; font-size: 16px; font-style: normal; font-weight: 500; line-height: 140%; letter-spacing: -0.16px;}
+/* padding-style */
+.padding-all{ padding: .8em;}
+
+
+/* ad_detail_space.css */
+/* checkbox-style */
+.keyword-etc {width: 290px; margin-left: 3.5em; padding: .3em 1em; text-align: left; border-radius: 5px; border: 0.5px solid var(--subtext); background: var(--default-white); color: #000; font-family: Pretendard; font-size: 16px; font-style: normal; font-weight: 500; line-height: 140%; letter-spacing: -0.16px;}
+
+
+/* ad_detail_budget.css */
+/* checkbox-style */
+.budgetkeyword-etc {padding: .3em 1em; text-align: left; border-radius: 5px; border: 0.5px solid var(--subtext); background: var(--default-white); color: #000; font-family: Pretendard; font-size: 16px; font-style: normal; font-weight: 500; line-height: 140%; letter-spacing: -0.16px;}
+

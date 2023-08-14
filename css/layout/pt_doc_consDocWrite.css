@@ -1,0 +1,13 @@
+/* Main Section */
+.consDocWrite__grid-con-top__left, .consDocWrite__grid-con-top__right{padding: 1em; margin-bottom: 1em;}
+.gridCon__left-consDocWrite{display: flex; flex-direction: column; align-items: center; gap: 1.5em; padding: 2em;}
+.gridCon__right-consDocWrite{display: flex; flex-direction: column;  justify-content: space-between; align-items:normal; gap: 1em; padding: 2em;}
+.right__grid1-consDocWrite{display: flex; flex-direction: column; gap: 1.2em;}
+.right__grid2-sampleWrite, .right__grid3-sampleWrite{display: flex; flex-direction: column; gap: 1.2em;}
+.form__submit{display: flex; justify-content: end; margin-top: 3em; gap: 1.5em;}
+.cosnDoc_item-input{width: 22em;}
+.consDoc__item4-input00{width: 7.7em;}
+/* padding margin */
+.margin-btm-md{margin-bottom: 3em;}
+.margin-btm-sm{margin: 1em 0;}
+.margin-sm{margin: 1em 0;}

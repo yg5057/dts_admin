@@ -1,0 +1,17 @@
+/* Main Section */
+.right__date-sampleRead {
+    width: 206px;
+    height: 32px;
+    padding-top: .3em;
+    border-radius: 99px;
+    background: #6E553E;
+
+    color: #FFFBFB;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.18px;
+}

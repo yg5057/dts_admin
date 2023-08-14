@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script defer src="../JS/selectbox.js"></script>
+    <script defer src="../JS/modal.js"></script>
+    <!-- Font Awesome Cdn Link -->
+    <script src="https://kit.fontawesome.com/c32876bdec.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <div class="wrap">
+        <section class="header">
+            <img src="../image/Rectangle 2954.png" alt="" class="header__img">
+            <div class="header__inner">
+                <img src="../image/logo_black.png" alt="" class="inner__logo">
+            </div>
+            <div class="header__line"></div>
+        </section><!--Header Section-->
+        <div class="container">
+            <section class="nav">
+                <ul>
+                    <li class="menu__dropdown">
+                        <a href="../index.html" class="nav__menu">
+                            <span class="menu-text">상담 요청 관리</span>
+                        </a>
+                        <ul class="menu__hide">
+                            <li><a href="../index.html" class="hide-text">상담 요청 관리</a></li>
+                            <li><a href="./html/ad_reqMan_detail.html" class="hide-text">상세 상담 일정</a></li>
+                            <li><a href="./html/ad_detail_reqConts.html" class="hide-text">상세 상담 진행</a></li>
+                            <li><a href="./html/ad_company.html" class="hide-text">업체 배정</a></li>
+                            <li><a href="./html/ad_reqMan_check.html" class="hide-text">상담 요청 조회</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__dropdown">
+                        <a href="./html/ad_construction_list.html" class="nav__menu">
+                            <span class="menu-text">공사 문서 관리</span>
+                        </a>
+                        <ul class="menu__hide">
+                            <li><a href="./html/ad_construction_list.html" class="hide-text">공사 문서 목록</a></li>
+                            <li><a href="./html/ad_construction_check.html" class="hide-text">공사 문서 조회</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__dropdown">
+                        <a href="#" class="nav__menu">
+                            <span class="menu-text">파트너 관리</span>
+                        </a>
+                        <ul class="menu__hide">
+                        </ul>
+                    </li>
+                </ul>
+            </section><!--nav Section-->
+            <section class="main">
+                <div class="main__top">
+                    <div class="top__rectangle"></div>
+                    <p class="top-text">공사 문서 조회</p>
+                </div><!--main__top-->
+                <div class="main__wrap">
+                    <div class="main__wrap-status-bar">
+                        <div class="wrap-status-line"></div>
+                        <div class="wrap-status-icon">
+                            <div class="icon-circle-fill"> <i class="icon-check fas fa-check fa-lg"></i> </div>
+                            <span class="status-text">견적 중</span>
+                        </div>
+                        <div class="wrap-status-icon">
+                            <div class="icon-circle"></div>
+                            <span class="status-text">계약진행</span>
+                        </div>
+                        <div class="wrap-status-icon">
+                            <div class="icon-circle"></div>
+                            <span class="status-text">입금대기</span>
+                        </div>
+                        <div class="wrap-status-icon">
+                            <div class="icon-circle"></div>
+                            <span class="status-text">입금확인</span>
+                        </div>
+                        <div class="wrap-status-icon">
+                            <div class="icon-circle"></div>
+                            <span class="status-text">공사대기</span>
+                        </div>
+                        <div class="wrap-status-icon">
+                            <div class="icon-circle"></div>
+                            <span class="status-text">공사진행</span>
+                        </div>
+                        <div class="wrap-status-icon">
+                            <div class="icon-circle"></div>
+                            <span class="status-text">공사완료</span>
+                        </div>
+                        <div class="wrap-status-icon">
+                            <div class="icon-circle"></div>
+                            <span class="status-text">보증완료</span>
+                        </div>
+                    </div><!--main__wrap-status-bar-->
+                    <form class="main__form">
+                        <div class="form__btn-group">
+                            <button class="btn-group btn-style-gr" type="button">입금확인</button>
+                            <button class="btn-group btn-style-gr" type="button">계약금 지급 완료</button>
+                            <button class="btn-group btn-style-gr" type="button">공사 완료</button>
+                            <button class="btn-group btn-style-rd" type="button" id="confirm">공사 취소</button>
+                        </div><!--form__btn-group-->
+
+                        <!-- 모달창 시작! -->
+                        <section class="modal modal-section type-confirm">
+                            <div class="enroll_box">
+                                <p class="menu_msg p-title">정말 공사를 취소하시겠어요?</p>
+                                <p class="menu_msg p-text">공사를 취소하면 불이익이 발생합니다.<br>정말 공사를 취소할까요?</p>
+                                <div class="enroll_btn">
+                                    <button class="btn btn-style-rd">취소하기</button>
+                                    <button class="btn btn-style-pk btn_close">돌아가기</button>
+                                </div>
+                            </div>
+                        </section><!--모달창 끝-->
+
+                        <div class="form__top">
+                            <div class="form__top-left">
+                                <p>공사 기본 정보</p>
+                                <label class="label-adReqManDetail" for="adress"> 현장주소
+                                    <input class="input-adReqManDetail margin-L" type="adress" name="adress"
+                                        id="adress">
+                                </label>
+                                <label class="label-adReqManDetail" for="adress"> 신청자
+                                    <input class="input-adReqManDetail" type="adress" name="adress" id="adress">
+                                </label>
+                                <label class="label-adReqManDetail" for="adress"> 연락처
+                                    <input class="input-adReqManDetail" type="adress" name="adress" id="adress">
+                                </label>
+                                <label class="label-adReqManDetail" for="adress"> 공사종류
+                                    <input class="input-adReqManDetail" type="adress" name="adress" id="adress">
+                                </label>
+                                <label class="label-adReqManDetail" for="adress"> 공사면적
+                                    <input class="input-adReqManDetail" type="adress" name="adress" id="adress">
+                                </label>
+                                <div class="btnwrap">
+                                    <button class="btn-form btn-style-pk" type="button">상담보기</button>
+                                </div>
+                            </div><!--form__top-left-->
+                            <div Class="form__top-right">
+                                <p>담당 공간 파트너</p>
+                                <label class="label-adReqManDetail" for="adress"> 업체명
+                                    <input class="input-adReqManDetail margin-L" type="adress" name="adress"
+                                        id="adress">
+                                </label>
+                                <label class="label-adReqManDetail" for="adress"> 업체대표
+                                    <input class="input-adReqManDetail" type="adress" name="adress" id="adress">
+                                </label>
+                                <label class="label-adReqManDetail" for="adress"> 업체주소
+                                    <input class="input-adReqManDetail" type="adress" name="adress" id="adress">
+                                </label>
+                                <label class="label-adReqManDetail" for="adress"> 업체 연락처
+                                    <input class="input-adReqManDetail" type="adress" name="adress" id="adress">
+                                </label>
+                                <div class="btnwrap">
+                                    <button class="btn-form btn-style-rd" type="button">파트너 변경</button>
+                                    <button class="btn-form btn-style-pk" type="button">파트너 보기</button>
+                                </div>
+                            </div><!--form__top-right-->
+                        </div><!--form__top-->
+                        <div class="form__bottom">
+                            <div class="main__tab">
+                                <button type="button" class="tab-consCheck btn-tab-active">공사 관리 문서 <div class="ellipse-style-rd">2</div></button>
+                                <button type="button" class="tab-consCheck btn-tab-inactive">채팅<div class="ellipse-style-rd">2</div></button>
+                                <button type="button" class="tab-consCheck btn-tab-inactive">문의사항<div class="ellipse-style-rd">2</div></button>
+                                <button type="button" class="tab-consCheck btn-tab-inactive">일일 공사 현황<div class="ellipse-style-rd">2</div></button>
+                                <button type="button" class="tab-consCheck btn-tab-inactive">하자보수<div class="ellipse-style-rd">2</div></button>
+                            </div><!--main__tab-->
+                            <div class="main__conts">
+                                <table class="conts__table-group">
+                                    <thead>
+                                        <th class="table-group__reqMan-th">번호</th>
+                                        <th class="table-group__reqMan-th">작성일</th>
+                                        <th class="table-group__reqMan-th">상태</th>
+                                        <th class="table-group__reqMan-th">참조</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="table-group__reqMan-tr">
+                                            <td>5</td>
+                                            <td>2023.06.09 09:47</td>
+                                            <td>
+                                                <div class="table-group__chip chip-style-bl">작성중</div>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="table-group__reqMan-tr">
+                                            <td>5</td>
+                                            <td>2023.06.09 09:47</td>
+                                            <td>
+                                                <div class="table-group__chip chip-style-bl">작성중</div>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="table-group__reqMan-tr">
+                                            <td>5</td>
+                                            <td>2023.06.09 09:47</td>
+                                            <td>
+                                                <div class="table-group__chip chip-style-bl">작성중</div>
+                                            </td>
+                                           <td></td>
+                                        </tr>
+                                        <tr class="table-group__reqMan-tr">
+                                            <td>5</td>
+                                            <td>2023.06.09 09:47</td>
+                                            <td>
+                                                <div class="table-group__chip chip-style-rd">제출됨</div>
+                                            </td>
+                                            <td> 
+                                                <a class="href-style" href="#">견적서</a>
+                                                <a class="href-style" href="#">공정표</a>
+                                                <a class="href-style" href="#">계약서</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-group__reqMan-tr">
+                                            <td>5</td>
+                                            <td>2023.06.09 09:47</td>
+                                            <td>
+                                                <div class="table-group__chip chip-style-bl">작성중</div>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table><!--conts__table-group-->
+                                <div class="conts__pagination">
+                                    <div class="pagination">
+                                        <a href="#">&laquo;</a>
+                                        <a href="#">&lt;</a>
+                                        <a href="#" class="active">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">4</a>
+                                        <a href="#">5</a>
+                                        <a href="#">6</a>
+                                        <a href="#">&gt;</a></li>
+                                        <a href="#">&raquo;</a>
+                                    </div>
+                                </div><!--conts__pagination-->
+                            </div><!--main__conts-->
+                        </div><!--form__bottom-->
+                    </form><!--main__form-->
+                </div><!--main__wrap-->
+            </section><!--main Section-->
+            <div><!--container-->
+            </div><!--wrap-->
+
+</body>
+
+</html>

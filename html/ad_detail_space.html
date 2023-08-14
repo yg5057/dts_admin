@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Font Awesome Cdn Link -->
+    <script src="https://kit.fontawesome.com/c32876bdec.js" crossorigin="anonymous"></script>
+    <script defer src="../JS/checkbox.js"></script>
+</head>
+
+
+<body>
+    <div class="wrap">
+        <section class="header">
+            <img src="../image/Rectangle 2954.png" alt="" class="header__img">
+            <div class="header__inner">
+                <img src="../image/logo_black.png" alt="" class="inner__logo">
+                <div class="inner__group">
+                    <div class="group__username">
+                        <i class="username-icon fa-solid fa-circle-user"></i>
+                        <p class="username-text">ooo님</p>
+                    </div>
+                    <img src="../image/Group 2817.png" alt="" class="group__alert">
+                </div>
+            </div>
+            <div class="header__line"></div>
+        </section><!--Header Section-->
+        <div class="container">
+            <section class="nav">
+                <ul>
+                    <li class="menu__dropdown">
+                        <a href="../index.html" class="nav__menu">
+                            <span class="menu-text">상담 요청 관리</span>
+                        </a>
+                        <ul class="menu__hide">
+                            <li><a href="../index.html" class="hide-text">상담 요청 관리</a></li>
+                            <li><a href="./html/ad_reqMan_detail.html" class="hide-text">상세 상담 일정</a></li>
+                            <li><a href="./html/ad_detail_reqConts.html" class="hide-text">상세 상담 진행</a></li>
+                            <li><a href="./html/ad_company.html" class="hide-text">업체 배정</a></li>
+                            <li><a href="./html/ad_reqMan_check.html" class="hide-text">상담 요청 조회</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__dropdown">
+                        <a href="./html/ad_construction_list.html" class="nav__menu">
+                            <span class="menu-text">공사 문서 관리</span>
+                        </a>
+                        <ul class="menu__hide">
+                            <li><a href="./html/ad_construction_list.html" class="hide-text">공사 문서 목록</a></li>
+                            <li><a href="./html/ad_construction_check.html" class="hide-text">공사 문서 조회</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__dropdown">
+                        <a href="#" class="nav__menu">
+                            <span class="menu-text">파트너 관리</span>
+                        </a>
+                        <ul class="menu__hide">
+                        </ul>
+                    </li>
+                </ul>
+            </section><!--nav Section-->
+            <section class="main">
+                <div class="main__top">
+                    <div class="top__rectangle"></div>
+                    <p class="top-text">상세 상담 진행</p>
+                </div><!--main__top-->
+                <div class="main__wrap">
+                    <div class="main-reqMan">
+                        <div class="main__icon-wrap">
+                            <i class="main__icon fa-solid fa-pen-to-square"></i>
+                            <span class="main__icon-text-gray">요청내용</span>
+                        </div>
+                        <i class="main__icon-wh fa-solid fa-play"></i>
+                        <div class="main__icon-wrap">
+                            <i class="main__icon fa-solid fa-brush"></i>
+                            <span class="main__icon-text-gray">인테리어</span>
+                        </div>
+                        <i class="main__icon-wh fa-solid fa-play"></i>
+                        <div class="main__icon-wrap">
+                            <i class="main__icon-rd fa-solid fa-cube"></i>
+                            <span class="main__icon-text-rd">공간목표</span>
+                        </div>
+                        <i class="main__icon-wh fa-solid fa-play"></i>
+                        <div class="main__icon-wrap">
+                            <i class="main__icon fa-solid fa-piggy-bank"></i>
+                            <span class="main__icon-text-gray">예산</span>
+                        </div>
+                        <i class="main__icon-wh fa-solid fa-play"></i>
+                        <div class="main__icon-wrap">
+                            <i class="main__icon fa-solid fa-circle-check"></i>
+                            <span class="main__icon-text-gray">기타</span>
+                        </div>
+                    </div>
+                    <form class="main__reqDetail-form" action="" mathod="">
+                        <div class="main__inputWrap">
+                            <label for="space-goal" class="label-adReqManDetail">공간 목표</label>
+                                <textarea form="main__reqDetail-form" id="space-goal" class="input-adReqManCheck-00" placeholder="공간 목표 입력란"></textarea>
+                            <label for="use-type" class="label-adReqManDetail">공사 후 예상 사용 형태</label>
+                                <textarea form="main__reqDetail-form"  id="use-type" class="input-adReqManCheck-00" placeholder="공사 후 예상 사용 형태 입력란"></textarea>
+                            <label for="user-concerns" class="label-adReqManDetail">소비자 우려 사항</label>
+                                <textarea form="main__reqDetail-form" id="user-concerns" class="input-adReqManCheck-00" placeholder="소비자 우려 사항 입력란"></textarea>
+                            <label class="label-adReqManDetail">소비자 보유 보험</label>    
+                                <div class="input-adReqManCheck">
+                                    <div class="input__chip-group">
+                                        <div class="chip-element padding-all">
+                                            <input type="checkbox" class="keyword" value="민사소송법률비용" id="insurance-keyword1">
+                                            <label for="insurance-keyword1" class="input__chip chip-style-gray">민사소송법률비용</label>
+                                        </div>
+                                        <div class="chip-element padding-all">
+                                            <input type="checkbox" class="keyword" value="일상생활책임배상보험" id="insurance-keyword2">
+                                            <label for="insurance-keyword2" class="input__chip chip-style-gray">일상생활책임배상보험</label>
+                                        </div>
+                                    </div><!--input__chip-group-->
+                                    <div class="input__chip-group">
+                                        <div class="chip-element padding-all">
+                                            <input type="checkbox" class="keyword" value="가족생활배상책임보험" id="insurance-keyword3">
+                                            <label for="insurance-keyword3" class="input__chip chip-style-gray">가족생활배상책임보험</label>
+                                        </div>
+                                        <div class="chip-element padding-all">
+                                            <input type="checkbox" class="keyword" value="급배수누출손해보험" id="insurance-keyword4">
+                                            <label for="insurance-keyword4" class="input__chip chip-style-gray">급배수누출손해보험</label>
+                                        </div>
+                                    </div><!--input__chip-group-->
+                                </div><!--input-adReqManCheck-->
+                        </div><!--main__inputWrap-->
+                        <div class="main__submit">
+                            <button class="btn-save btn-style-rd" type="button"> <a href="./ad_detail_budget.html">상담 내용 저장</a></button>
+                        </div><!--main__submit-->
+                    </form><!--main__reqDetail-form-->
+                </div><!--main__wrap-->
+            </section><!--main-->
+        </div><!--container-->
+    </div><!--wrap-->
+
+</body>
+
+</html>

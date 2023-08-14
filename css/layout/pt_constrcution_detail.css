@@ -1,0 +1,42 @@
+/* Main section*/ 
+/* main__bottom-cons_detail */
+.main__bottom-cons_detail{width: 100%; padding: 3em 5em; }
+.bottom-cons_detail__title{ width: fit-content; border-bottom: 3px solid #585858; color: #333; font-family: Pretendard; font-size: 36px; font-style: normal; font-weight: 700; line-height: normal; letter-spacing: -0.36px; }
+.bottom-cons_detail__grid-con-top, .bottom-cons_detail__grid-con-bottom {display: grid; grid-template-columns: repeat(2, 1fr); }
+.grid-con-top__left, .grid-con-bottom__left{border-right: 2px solid #CBCBCB;}
+.bottom-cons_detail__change{float: right;}
+
+/* grid-con-top,  grid-con-bottom 하위 */
+.grid-con-top__left, .grid-con-top__right, .grid-con-bottom__left, .grid-con-bottom__right {padding: 2em; margin-bottom: 3em;}
+.grid-con-top__left__item1, .grid-con-top__left__item2, .grid-con-top__left__item3, .grid-con-top__left__item4,
+.grid-con-top__right__item1, .grid-con-top__right__item2, .grid-con-top__right__item3, .grid-con-top__right__item4, 
+.grid-con-bottom__left__item1, .grid-con-bottom__left__item2, .grid-con-bottom__left__item3,
+.grid-con-bottom__right__item1, .grid-con-bottom__right__item2{display: flex; justify-content: space-between; padding: .5em 2em .5em 1em;}
+.item-input{ width: 24em;}
+.item4-input00{width: 12em;}
+
+/* .bottom-cons_detail__grid-con-bottom 하위 */
+.change-btn{width: 216px; height: 77.007px; text-align: center; font-family: Pretendard; font-size: 24px; font-style: normal; font-weight: 700; line-height: normal; letter-spacing: -0.24px;}
+
+/* input file */
+.item3__upload-name{display: inline-block; width: 17em; height: 2em; margin-right: .7em; vertical-align: middle; background: #FFF; border: 1px solid #000; border-radius: 3px; 
+                    color: var(--caption, #8E8E8E); text-align: center; font-family: Pretendard; font-size: 20px; font-style: normal; font-weight: 400; line-height: normal; letter-spacing: -0.24px;}
+.item3__upload-file{display: inline-block;
+    width: 6em;
+    height: 2em;
+    vertical-align: middle;
+    border-radius: 50px;
+    background: #D1372A;
+    cursor: pointer;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; 
+    letter-spacing: 0.066px;
+}
+
+

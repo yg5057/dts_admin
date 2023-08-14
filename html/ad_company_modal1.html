@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뒤통수</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script defer src="../JS/modal.js"></script>
+    <!-- Font Awesome Cdn Link -->
+    <script src="https://kit.fontawesome.com/c32876bdec.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section>
+        <button type="button" id="confirm">모달창 열기</button>
+    </section>
+    <section class="modal modal-section type-confirm"> 
+        <div class="modal-wrap">
+            <div class="main__bottom-list">
+                <div class="modal-top">
+                    <div class="bottom-list__title">업체를 선택해주세요.</div>
+                    <button type="button" class="btn_close">
+                        <icon class="modal-X fas fa-x fa-4x"></icon>
+                    </button>
+                </div><!--modal-top-->
+                <div class="bottom-list__search-md1">
+                    <div class="search-md1__wrap">
+                        <label class="label-modal" for="user-name"> 업체명
+                            <input class="input-modal" type="text" name="user-name" id="user-name" placeholder="입력" required>
+                        </label>
+                        <label class="label-modal" for="user-name"> 지역
+                            <input class="input-modal" type="search" name="user-name" id="user-name" placeholder="입력" required>
+                        </label>
+                        <label class="label-modal" for="user-name"> 연락처
+                            <input class="input-modal" type="text" name="user-name" id="user-name" placeholder="입력" required>
+                        </label>
+                        <label class="label-modal" for="user-name"> 대표자
+                            <input class="input-modal" type="search" name="user-name" id="user-name" placeholder="입력" required>
+                        </label>
+                    </div><!--search-md1__wrap-->
+                    <button class="btn__serarch-modal btn-style-rd" type="submit">검색하기</button>
+                </div><!--bottom-list__search-md1-->
+                <div class="bottom-list__table">
+                    <table class="table__couns-tb">
+                        <thead class="couns-tb__couns-th">
+                            <tr>
+                                <th class="counslist-th-text couns-td-input"></th>
+                                <th class="counslist-th-text">번호</th>
+                                <th class="counslist-th-text">현장명</th>
+                                <th class="counslist-th-text">면적</th>
+                                <th class="counslist-th-text">희망금액</th>
+                            </tr>
+                        </thead>
+                        <tbody class="couns-tb__couns-td">
+                            <tr>
+                                <td class="couns-td-text couns-td-input"><input class="radio-group" type="radio"
+                                        name="radioGroup" value="option5" id="option5"></td>
+                                <td class="couns-td-text"><label for="option5">5</label></td>
+                                <td class="couns-td-text"><label for="option5">OO 인테리어</label></td>
+                                <td class="couns-td-text text-clr-gr"><label for="option5">대표자</label></td>
+                                <td class="couns-td-text text-clr-gr"><label for="option5">광주광역시 동구 금남로 4가 6, 3층
+                                        303호</label></td>
+                            </tr>
+                            <tr>
+                                <td class="couns-td-text couns-td-input"><input class="radio-group" type="radio"
+                                        name="radioGroup" value="option4" id="option4"></td>
+                                <td class="couns-td-text"><label for="option4">4</label></td>
+                                <td class="couns-td-text"><label for="option4">OO 인테리어</label></td>
+                                <td class="couns-td-text text-clr-gr"><label for="option4">대표자</label></td>
+                                <td class="couns-td-text text-clr-gr"><label for="option4">광주광역시 동구 금남로 4가 6, 3층
+                                        303호</label></td>
+                            </tr>
+                            <tr>
+                                <td class="couns-td-text couns-td-input"><input class="radio-group" type="radio"
+                                        name="radioGroup" value="option3" id="option3"></td>
+                                <td class="couns-td-text"><label for="option3">3</label></td>
+                                <td class="couns-td-text"><label for="option3">OO 인테리어</label></td>
+                                <td class="couns-td-text text-clr-gr"><label for="option3">대표자</label></td>
+                                <td class="couns-td-text text-clr-gr"><label for="option3">광주광역시 동구 금남로 4가 6, 3층
+                                        303호</label></td>
+                            </tr>
+                            <tr>
+                                <td class="couns-td-text couns-td-input"><input class="radio-group" type="radio"
+                                        name="radioGroup" value="option2" id="option2"></td>
+                                <td class="couns-td-text"><label for="option2">2</label></td>
+                                <td class="couns-td-text"><label for="option2">OO 인테리어</label></td>
+                                <td class="couns-td-text text-clr-gr"><label for="option2">대표자</label></td>
+                                <td class="couns-td-text text-clr-gr"><label for="option2">광주광역시 동구 금남로 4가 6, 3층
+                                        303호</label></td>
+                            </tr>
+                            <tr>
+                                <td class="couns-td-text couns-td-input"><input class="radio-group" type="radio"
+                                        name="radioGroup" value="option1" id="option1"></td>
+                                <td class="couns-td-text"><label for="option1">1</label></td>
+                                <td class="couns-td-text"><label for="option1">OO 인테리어</label></td>
+                                <td class="couns-td-text text-clr-gr"><label for="option1">대표자</label></td>
+                                <td class="couns-td-text text-clr-gr"><label for="option1">광주광역시 동구 금남로 4가 6, 3층 303호</label></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><!--main__bottom-list-->
+            <div class="main__pagewrap">
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#">&lt;</a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">&gt;</a></li>
+                    <a href="#">&raquo;</a>
+                </div>
+            </div><!--main__couns-pagewrap-->
+            <div class="main__btn-modal">
+                <button type="button" name="chooseConsDoc" class="btn-modal btn-style-rd">다음</button>
+            </div>
+        </div><!--modal-wrap-->
+    </section><!--modal-->
+</body>
+
+</html>

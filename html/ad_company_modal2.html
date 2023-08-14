@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뒤통수</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Font Awesome Cdn Link -->
+    <script src="https://kit.fontawesome.com/c32876bdec.js" crossorigin="anonymous"></script>
+    <!-- Fullcalendar cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+    <script src="../JS/fullcalendar.js"></script>
+    <script src="../JS/fileupload.js" defer></script>
+</head>
+
+<body>
+    <div class="modal">
+        <div class="modal-wrap">
+            <div class="main__bottom-list">
+                <div class="bottom-list__title">업체를 선택해주세요.</div>
+                <div class="bottom-list__search-md2">
+                        <label class="label-modal" for="user-name"> 날짜
+                            <input class="input-modal" type="date" name="user-name" id="user-name" placeholder="입력"
+                                required>
+                        </label>
+                        <label class="label-modal" for="user-name"> 시간
+                            <input class="input-modal" type="time" name="user-name" id="user-name" placeholder="입력"
+                                required>
+                        </label>
+                </div><!--bottom-list__search-cp-->
+                <div class="main__btn-modal">
+                    <button type="button" name="chooseConsDoc" class="btn-modal btn-style-pk btn_previous">이전</button>
+                    <button type="button" name="chooseConsDoc" class="btn-modal btn-style-rd">배정하기</button>
+                </div><!--main__btn-modal-->
+            </div><!--modal-wrap-->
+        </div><!--modal-->
+</body>
+
+</html>
